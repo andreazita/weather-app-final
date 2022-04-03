@@ -18,86 +18,36 @@
   </head>
   <body>
     <div class="container">
-      <form class="search-form" id="search-form">
-         <div class="row">
-           <div class="col-4">
-             <input
-               type="search"
-               placeholder="type a city"
-               autofocus="on"
-               autocomplete="off"
-               id="city-input"
-               class="form-control shadow-sm"
-             />
-     </div>
-       <div class="col-3">
-       <button 
-       type="search" class="btn btn-light" id="search-button">search</button>
-     </div>
-
-       <div class="col-3">
-         <span class="current-location">
-       <button
-       type="search" class="btn btn-light" id="current-location-button">your location</button>
-     </span>
+      <div class="weather-app">
+        <h1>New York, US</h1>
+        <ul>
+          <li>Friday 09:00</li>
+          <li>Clear</li>
+        </ul>
+          <div clas="col-6">
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
+              alt="Cloudy"
+            />
+            12°C | °F
+          </div>
+          <div class="col-6">
+            <ul>
+              <li>Precipitation: 0%</li>
+              <li>Humidity: 0%</li>
+              <li>Wind: 0%</li>
+            </ul>
+          </div>
+        </div>
+        <small>
+          <a
+            href="https://github.com/andreazita/weather-app-final"
+            target="_blank"
+            >Open-source code</a
+          >
+          by Andrea Zita
+        </small>
       </div>
-
-      <h1 id="city"></h1>
-      <h3 id="date"></h3>
-      <h2 id="temp"></h2>
-      <div class="sun">
-        <img src="images/sun.jpeg" alt="" width="100" />
-      </div>
-      <p class="conditions">
-        <span id="precipitation">Precipitation: 80%</span>
-        <br />
-        <span id="humidity"></span>
-        <br />
-        <span id="wind"></span>
-      </p>
-
-      <div class="row">
-        <div class="col-2">
-          <h5>Tuesday</h5>
-          <img src="images/sun.jpeg" alt="" width="50" />
-          <p class="temperature-1">22 °C</p>
-        </div>
-
-        <div class="col-2">
-          <h5>Wednesday</h5>
-          <img src="images/cloudy.png" alt="" width="50" />
-          <p class="temperature-1">19 °C</p>
-        </div>
-
-        <div class="col-2">
-          <h5>Thursday</h5>
-          <img src="images/rainy.png" alt="" width="50" />
-          <p class="temperature-1">23 °C</p>
-        </div>
-
-        <div class="col-2">
-          <h5>Friday</h5>
-          <img src="images/sun.jpeg" alt="" width="50" />
-          <p class="temperature-1">24 °C</p>
-        </div>
-
-        <div class="col-2">
-          <h5 class="card-title">Saturday</h5>
-          <img src="images/cloudy.png" alt="" width="50" />
-          <p class="temperature-1">21 °C</p>
-        </div>
-
-        <div class="col-2">
-          <h5 class="card-title">Sunday</h5>
-          <img src="images/sun.jpeg" alt="" width="50" />
-          <p class="temperature-1">20 °C</p>
-        </div>
-      </div>
-      <br>
-      <br>
-    </div>
-<a href="https://github.com/andreazita/weather-app-final" target="_blank">
-  Open-source code</a>, by Andrea Zita</div>
     </div>
     <script src="src/app.js"></script>
   </body>
