@@ -1,56 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
-h1,
-h2,
-h3,
-p {
+
+body {
   font-family: "League Spartan", sans-serif;
 }
-
-.current-location {
-  font-family: "League Spartan", sans-serif;
-  margin-left: -250px;
+.weather-app {
+  padding: 20px;
+  border: 1px solid #dadde1;
+  border-radius: 5px;
 }
 
 h1 {
-  margin-top: 0px;
-}
-.search-form {
-  margin-top: 20px;
-  margin-left: 0;
-  font-family: "League Spartan", sans-serif;
-}
-
-.date {
-  margin-top: -10px;
-  font-family: "League Spartan", sans-serif;
-  font-size: 20px;
+  color: #878787;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 28px;
+  margin-bottom: 0;
 }
 
-.temperature {
-  margin-left: 120px;
-  font-family: "League Spartan", sans-serif;
-  margin-top: 40px;
+ul {
+  margin: 0;
+  padding: 0;
 }
 
-.conditions {
-  margin-left: 120px;
-  font-family: "League Spartan", sans-serif;
-  margin-top: -50px;
-  font-style: italic;
-}
-
-.col-2 {
-  text-align: center;
-  position: relative;
-  font-family: "League Spartan", sans-serif;
-  margin-top: 40px;
-  margin-left: -40px;
-}
-
-.sun {
-  margin-top: 10px;
-}
-
-.temperature-1 {
-  margin-top: 10px;
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #878787;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 19px;
 }
