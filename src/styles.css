@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+h1,
+h2,
+h3,
+p {
+  font-family: "League Spartan", sans-serif;
+}
+
+.current-location {
+  font-family: "League Spartan", sans-serif;
+  margin-left: -250px;
+}
+
+h1 {
+  margin-top: 0px;
+}
+.search-form {
+  margin-top: 20px;
+  margin-left: 0;
+  font-family: "League Spartan", sans-serif;
+}
+
+.date {
+  margin-top: -10px;
+  font-family: "League Spartan", sans-serif;
+  font-size: 20px;
+}
+
+.temperature {
+  margin-left: 120px;
+  font-family: "League Spartan", sans-serif;
+  margin-top: 40px;
+}
+
+.conditions {
+  margin-left: 120px;
+  font-family: "League Spartan", sans-serif;
+  margin-top: -50px;
+  font-style: italic;
+}
+
+.col-2 {
+  text-align: center;
+  position: relative;
+  font-family: "League Spartan", sans-serif;
+  margin-top: 40px;
+  margin-left: -40px;
+}
+
+.sun {
+  margin-top: 10px;
+}
+
+.temperature-1 {
+  margin-top: 10px;
+}
