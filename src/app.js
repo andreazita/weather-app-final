@@ -3,6 +3,14 @@ let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=New York&appid=$
 
 function formatDate(timestamp) {
   let date = new Date(timestamp);
+  let hours = date.getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+  let minutes = date.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
   let days = [
     "Sunday",
     "Monday",
@@ -13,18 +21,11 @@ function formatDate(timestamp) {
     "Saturday",
   ];
   let day = days[date.getDay()];
-  let hours = date.getHours();
-  if (hours < 10) {
-    hours = `0${hours}`;
-  }
-  let minutes = date.getMinutes();
-  if (minutes < 10) {
-    minutes = `0${minutes}`;
-  }
-  return `${day}, ${hours}:${minutes}`;
+  return `${[day]}, ${hours}:${minutes}`;
 }
 
 function diplayTemperature(response) {
+  console.log(response.data.dt * 1000);
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
   let cityElement = document.querySelector("#city");
