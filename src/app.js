@@ -25,7 +25,6 @@ function formatDate(timestamp) {
 }
 
 function diplayTemperature(response) {
-  console.log(response.data.dt * 1000);
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
   let cityElement = document.querySelector("#city");
