@@ -43,25 +43,24 @@
           <div class="overview">
             <h1 id="city"></h1>
             <ul>
-              <li>Last updated: <span id="date"></span></li>
               <li id="weatherDescription"></li>
             </ul>
           </div>
           <div class="row">
-            <div class="col-4">
+            <div class="col-6">
               <div class="clearfix weather-temperature">
                 <img src="" alt="" id="icon" class="float-left" />
                 <div class="float-left">
-                  <strong id="temperature"></strong
-                  ><span class="units">
-                    <a href="#" id="celsius-link" class="active">°C</a> |
+                  <strong id="temperature"></strong>
 
-                    <a href="#" id="fahrenheit-link">°F</a></span
+                  <span class="units">
+                    <a href="" id="celsius-link" class="active">°C</a> |
+                    <a href="" id="fahrenheit-link">°F</a></span
                   >
                 </div>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-6">
               <ul>
                 <li>Humidity: <span id="humidity"></span>%</li>
                 <li>Wind: <span id="wind"></span> km/h</li>
@@ -70,16 +69,16 @@
           </div>
           <div class="weather-forecast" id="forecast"></div>
         </div>
-        <small class="signature">
-          <a
-            href="https://github.com/andreazita/weather-app-final"
-            target="_blank"
-            >Open-source code</a
-          >
-          by Andrea Zita
-        </small>
+        <p class="date">Last updated: <span id="date"></span></p>
       </div>
     </div>
+    <p class="author">
+      <a href="https://github.com/andreazita/weather-app-final" target="_blank"
+        >Open-source code</a
+      >
+      by Andrea Zita
+    </p>
+
     <script src="src/app.js"></script>
   </body>
 </html>
