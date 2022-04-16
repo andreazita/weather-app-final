@@ -29,6 +29,7 @@
                   class="form-control"
                   id="city-input"
                   autocomplete="off"
+                  style="width: 200px"
                 />
               </div>
               <div class="col">
@@ -37,6 +38,19 @@
                   value="search"
                   class="btn btn-primary w-100"
                 />
+              </div>
+              <div class="col">
+                <button
+                  class="btn btn-success w-70"
+                  id="current-location-button"
+                >
+                  <i class="fa-solid fa-location-dot"></i>
+                  <img
+                    src="images/location.png"
+                    alt="your location"
+                    width="20px"
+                  />
+                </button>
               </div>
             </div>
           </form>
@@ -74,22 +88,7 @@
             </div>
           </div>
 
-          <div class="weather-forecast" id="forecast">
-            <div class="row">
-              <div class="col-2">
-                <div class="forecast-date">Thursday</div>
-                <img
-                  src="http://openweathermap.org/img/wn/03d@2x.png"
-                  alt=""
-                  width="36px"
-                />
-                <div class="forecast-temperatures">
-                  <strong class="forecast-mx">18°</strong>
-                  <span class="forecast-min">12°</span>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="weather-forecast" id="forecast"></div>
 
           <div class="weather-forecast" id="forecast"></div>
         </div>

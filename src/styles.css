@@ -48,7 +48,7 @@ li:first-letter {
 }
 
 .weather-icon img {
-  margin-top: -40px;
+  margin-top: -35px;
   margin-left: -20px;
   height: 100px;
   width: 100px;
@@ -96,12 +96,14 @@ a:visited {
 }
 .forecast-date {
   font-size: 16px;
-  color: blue;
-  opacity: 0.3;
+  color: black;
+  opacity: 0.5;
 }
 
 .forecast-temperatures {
   font-size: 13px;
+  color: black;
+  opacity: 0.5;
 }
 
 .author {
