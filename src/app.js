@@ -44,7 +44,7 @@ function displayForecast(response) {
                     forecastDay.weather[0].icon
                   }@2x.png"
                   alt=""
-                  width="36px"
+                  width="40px"
                 />
                 <div class="forecast-temperatures">
                   <strong class="forecast-mx">${Math.round(
@@ -64,7 +64,6 @@ function displayForecast(response) {
 }
 
 function getForecast(coordinates) {
-  console.log(coordinates);
   let apiKey = "5852a4827f249499c4c0659dbad80159";
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&exclude={part}&appid=${apiKey}&units=metric `;
   axios.get(apiUrl).then(displayForecast);
@@ -73,8 +72,12 @@ function getForecast(coordinates) {
 function diplayTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
-  let cityElement = document.querySelector("#city");
-  cityElement.innerHTML = response.data.name;
+
+  let cityElement = response.data.name;
+  let countryElement = response.data.sys.country;
+  let h1 = document.querySelector("#city");
+  h1.innerHTML = `${cityElement}, ${countryElement}`;
+
   let weatherDescriptionElement = document.querySelector("#weatherDescription");
   weatherDescriptionElement.innerHTML = response.data.weather[0].description;
   let humidityElement = document.querySelector("#humidity");
