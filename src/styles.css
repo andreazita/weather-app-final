@@ -4,7 +4,7 @@ body {
   font-family: "League Spartan", sans-serif;
 }
 
-.container {
+.weather-app-wrapper {
   background-image: linear-gradient(to bottom, #ffffff 0%, #c7c9e8 100%);
   opacity: 96%;
   border-radius: 10px;
@@ -94,8 +94,8 @@ a:visited {
   opacity: 0.5;
   font-size: 14px;
   font-weight: 300;
-  margin-left: 25px;
   margin-top: -10px;
+  margin-left: 25px;
 }
 
 .weather-forecast {
@@ -116,10 +116,8 @@ a:visited {
 }
 
 .author {
-  margin-top: -50px;
-  margin-left: 300px;
-  text-align: center;
   font-size: 14px;
-  padding: 20px;
-  position: relative;
+  text-align: center;
+  margin-top: -30px;
+  margin-left: 300px;
 }
